@@ -24,5 +24,8 @@ function s = spec2(spch,fs,dwind,wind,dsr)
     wm = m .* wind;
     
     %Compute FFT
+    nfft = 129;
+    fm = fft(wm,nfft);
     
+    s = fm;
 end

@@ -1,0 +1,8 @@
+function m = sliceit(v,nwind,noverlab)
+    m = [];
+    N = length(v);
+    ncol = floor((N-noverlab)/(nwind-noverlab));
+    for i = 1:ncol
+        v(i:nwind)
+    end
+end

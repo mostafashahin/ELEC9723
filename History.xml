@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+<session>
+<command time_stamp="16516e6e445">%-- 8/08/2018 10:19 AM --%</command>
+<command error="true" execution_time="7596">rop</command>
+</session>
+<session>
+<command time_stamp="16d65651cbd">%-- 25/09/2019 8:29 AM --%</command>
+<command execution_time="360">load('Speech+samples-20190925\speech.mat')</command>
+<command execution_time="2007">[x,fs]=audioread('Speech+samples-20190925\speech.wav')</command>
+<command execution_time="6467">plot(speech)</command>
+<command execution_time="388">plot(x)</command>
+<command execution_time="141">[x,fs]=audioread('Speech+samples-20190925\sample1.wav')</command>
+<command execution_time="70">plot(x)</command>
+<command execution_time="16927">[s,w,t]=spectrogram(x);</command>
+<command execution_time="29">t</command>
+<command execution_time="88">[s,w,t]=spectrogram(x,320);</command>
+<command execution_time="75">[s,w,t]=spectrogram(x,320,160);</command>
+<command execution_time="23">44 * 160</command>
+<command execution_time="262">s</command>
+<command execution_time="21">s(1,:)</command>
+<command execution_time="3651">spectrogram(x,320,160)</command>
+<command execution_time="561">spectrogram(x,80,40)</command>
+<command execution_time="106">hold</command>
+<command execution_time="247">spectrogram(x,320,160)</command>
+<command execution_time="363">subplot(2,1,1);</command>
+<command execution_time="149">spectrogram(x,80,40)</command>
+<command execution_time="100">subplot(2,1,2);</command>
+<command execution_time="15">plot(x);</command>
+<command error="true" execution_time="402">plot x</command>
+<command execution_time="82" repeat="3">plot(x);</command>
+<command execution_time="143">axis([0 7257 -1 1]);</command>
+<command execution_time="28">x = [1,2,3,4,5,6];</command>
+<command execution_time="15">y = [2,4,6,8,10,12];</command>
+<command execution_time="72">plot(x,y);</command>
+<command execution_time="64">x=range(5);</command>
+<command execution_time="16">x</command>
+<command execution_time="93">x = linspace(0,1000);</command>
+<command execution_time="12">x</command>
+<command execution_time="110">[x,fs]=audioread('Speech+samples-20190925\sample1.wav')</command>
+<command error="true" execution_time="222">x1 = linspace(0,size(x));</command>
+<command execution_time="18">size(x)</command>
+<command error="true" execution_time="125">size(x)(1)</command>
+<command execution_time="35">c = size(x)</command>
+<command execution_time="31">c</command>
+<command error="true" execution_time="22">x1 = linspace(0,c);</command>
+<command execution_time="31">c(1)</command>
+<command execution_time="14">x1 = linspace(0,c(1));</command>
+<command execution_time="24">x1 = x1/16000;</command>
+<command execution_time="19">x1</command>
+<command execution_time="13">x1 = linspace(0,c(1));</command>
+<command execution_time="14">c(1)</command>
+<command execution_time="9">x1 = linspace(0,7257);</command>
+<command execution_time="22">x1</command>
+<command execution_time="11">x1 = linspace(0,5);</command>
+<command execution_time="20">x1</command>
+<command execution_time="17">x1 = linspace(0,5,5);</command>
+<command execution_time="13">x1 = linspace(0,c(1),c(1));</command>
+<command execution_time="17">x1 = x1/16000;</command>
+<command execution_time="83">x1</command>
+<command execution_time="14">x1 = linspace(0,5,5)/16000;</command>
+<command error="true" execution_time="168">plot(x,x1);</command>
+<command execution_time="17">size(x)</command>
+<command execution_time="17">size(x1)</command>
+<command execution_time="13">x1 = linspace(0,c(1),c(1))/16000;</command>
+<command execution_time="29">plot(x1,x);</command>
+<command execution_time="20">axis([0 inf -1 1])</command>
+<command execution_time="57">figure;</command>
+<command execution_time="459">spectrogram(x,80,40,[],16000)</command>
+<command execution_time="163">spectrogram(x,80,40,[],16000,'yaxis')</command>
+<command execution_time="85">subplot(2,1,1)</command>
+<command execution_time="18">plot(x1,x);</command>
+<command execution_time="19">axis([0 inf -1 1])</command>
+<command execution_time="31">subplot(2,1,2)</command>
+<command execution_time="144">spectrogram(x,80,40,[],16000,'yaxis')</command>
+<command execution_time="32">s = spec1(x,16000,0.05,[],0.025);</command>
+<command execution_time="99">s</command>
+<command execution_time="302" repeat="2">s = spec1(x,16000,0.05,[],0.025);</command>
+<command execution_time="63" repeat="2">spec1</command>
+<command execution_time="38">s = spec1(x,16000,0.05,[],0.025);</command>
+<command execution_time="51">s = spec1(x,16000,0.005,[],0.0025);</command>
+<command execution_time="175">plot(s);</command>
+<command execution_time="12">7257/40</command>
+<command error="true" execution_time="228">imagesc(s);</command>
+<command execution_time="189">s</command>
+<command execution_time="33">abs(s);</command>
+<command execution_time="89">imagesc(abs(s));</command>
+<command error="true" execution_time="1643">man imagesc</command>
+<command execution_time="9165">help imagesc</command>
+<command execution_time="482">colorbar</command>
+<command execution_time="48">imagesc(abs(s));</command>
+<command execution_time="32">colorbar</command>
+<command execution_time="58">abs(s)</command>
+<command execution_time="832">abs(s)/max(abs(s))</command>
+<command execution_time="53">imagesc(abs(s)/max(abs(s)));</command>
+<command execution_time="472">imagesc(norm(abs(s)));</command>
+<command execution_time="21">norm(abs(s))</command>
+<command execution_time="65">abs(s)</command>
+<command error="true" execution_time="442">normalize(abs(s))</command>
+<command execution_time="13">A = 1:5</command>
+<command execution_time="49">A = 1:5:2</command>
+<command execution_time="11">A = 1:5:1</command>
+<command execution_time="22">A = 1:1:5</command>
+<command execution_time="32">A = 1:2:5</command>
+<command execution_time="13">A = 1:5</command>
+<command error="true" execution_time="22" repeat="2">normalize(A)</command>
+<command execution_time="76">std(A)</command>
+<command execution_time="230">mean(A)</command>
+<command execution_time="19">A-mean(A)/std(A)</command>
+<command execution_time="30">A = [1,2,3,4,5;6,7,8,9,10];</command>
+<command execution_time="35">A</command>
+<command execution_time="210">A-mean(A)/std(A)</command>
+<command execution_time="20">ps = abs(s);</command>
+<command error="true" execution_time="197">imagesc(ps-mean(ps)/std(ps)));</command>
+<command execution_time="26">imagesc((ps-mean(ps))/std(ps));</command>
+<command execution_time="14">imagesc(ps);</command>
+<command execution_time="16">imagesc(ps*2);</command>
+<command error="true" execution_time="8">imagesc(ps-mean(ps)/std(ps)));</command>
+<command execution_time="24">imagesc((ps-mean(ps))/std(ps));</command>
+<command execution_time="24">(ps-mean(ps))/std(ps)</command>
+<command execution_time="82">(ps-mean(ps))</command>
+<command execution_time="15">std(ps)</command>
+<command execution_time="64">(ps-mean(ps))./std(ps)</command>
+<command error="true" execution_time="12">imagesc(ps-mean(ps)./std(ps)));</command>
+<command execution_time="33">imagesc((ps-mean(ps))./std(ps));</command>
+<command execution_time="30">colorbar</command>
+<command execution_time="42">ps = flip(ps);</command>
+<command execution_time="31">imagesc((ps-mean(ps))./std(ps));</command>
+<command execution_time="54" repeat="2">drawspech(s)</command>
+<command execution_time="533">pcolor((ps-mean(ps))./std(ps))</command>
+<command execution_time="57">colorbar</command>
+<command execution_time="248">spectrogram(x,80,40,[],16000,'yaxis')</command>
+<command execution_time="77">figure</command>
+<command error="true" execution_time="31">drawspech</command>
+<command execution_time="62" repeat="3">drawspech(s);</command>
+<command execution_time="56">figure</command>
+<command execution_time="183">spectrogram(x,80,40,[],16000,'yaxis')</command>
+<command execution_time="253">s</command>
+<command execution_time="15">s(:,1)</command>
+<command execution_time="35">x</command>
+<command execution_time="13">7257/40</command>
+<command error="true" execution_time="33">for i from 2 to 20</command>
+<command execution_time="201">vec2mat(x,180)</command>
+<command batch="1" error="true">for i = 1:180</command>
+<command batch="1" error="true">print i;</command>
+<command batch="1" error="true" execution_time="736">end</command>
+<command batch="2">for i = 1:180</command>
+<command batch="2">i</command>
+<command batch="2" execution_time="46">end</command>
+<command batch="3">for i = 1:180</command>
+<command batch="3" execution_time="10">end</command>
+<command error="true" execution_time="56" repeat="3">test</command>
+<command execution_time="621">help print</command>
+<command execution_time="12">disp('hi')</command>
+<command execution_time="18">test</command>
+<command execution_time="53">x=[]</command>
+<command execution_time="12">c1 = [1,2,3,4];</command>
+<command execution_time="27">c2 = [3,4,5,6];</command>
+<command execution_time="12" repeat="2">x = [x c1]</command>
+<command execution_time="9">x = []</command>
+<command error="true" execution_time="5">x = [x c1`]</command>
+<command execution_time="27">c1'</command>
+<command execution_time="35" repeat="4">x = [x c1']</command>
+<command execution_time="9">floor(3.4)</command>
+<command execution_time="19">length(x)</command>
+<command execution_time="200">[x,fs]=audioread('Speech+samples-20190925\sample1.wav');</command>
+<command execution_time="10">length(x)</command>
+<command execution_time="37">x</command>
+<command error="true" execution_time="72">x[1:10]</command>
+<command execution_time="13">x(1:10)</command>
+<command error="true" execution_time="263">len(ans)</command>
+<command execution_time="37">length(ans)</command>
+<command execution_time="101" repeat="6">m = sliceit(x,80,40);</command>
+<command execution_time="9">bb = [];</command>
+<command execution_time="16">c1</command>
+<command execution_time="20">size(c1)</command>
+<command execution_time="85">m = sliceit(x,80,40);</command>
+<command execution_time="13">f = fft(m);</command>
+<command execution_time="100">f</command>
+<command execution_time="13">f = fft(m,512);</command>
+<command execution_time="36">f = fft(m,129);</command>
+<command execution_time="3">f(1)</command>
+<command execution_time="22">s(1)</command>
+<command execution_time="182">drawspech(f)</command>
+<command error="true" execution_time="110">hamming</command>
+<command execution_time="554">help hamming</command>
+<command error="true" execution_time="614">hamming(m);</command>
+<command execution_time="17">w = hamming(80);</command>
+<command execution_time="24">w</command>
+<command execution_time="16">bb</command>
+<command execution_time="8">bb = [bb c1'];</command>
+<command execution_time="9">bb</command>
+<command execution_time="12">bb = [bb c1'];</command>
+<command execution_time="11">bb</command>
+<command error="true" execution_time="64">bb * c1</command>
+<command error="true" execution_time="218">bb .* c1</command>
+<command execution_time="16">bb .* c1'</command>
+<command execution_time="32">c1</command>
+<command execution_time="16">wm = applyWindow(m,w);</command>
+<command execution_time="11">f = fft(wm,129);</command>
+<command execution_time="11">f(1)</command>
+<command execution_time="32">s(1)</command>
+<command execution_time="260">test1</command>
+<command execution_time="10">test1('d');</command>
+<command execution_time="15">test1('d')</command>
+<command execution_time="39" repeat="2">test1('')</command>
+<command execution_time="16" repeat="3">test1([])</command>
+<command execution_time="10">test1('')</command>
+<command execution_time="33">test1('f')</command>
+<command execution_time="102" repeat="2">s = spec1(x,16000,0.005,[],0.0025);</command>
+<command execution_time="22">s2 = spec2(x,16000,0.005,[],0.0025);</command>
+<command execution_time="273">s == s2</command>
+<command execution_time="16">c1</command>
+<command execution_time="22">c1 == c1</command>
+<command execution_time="15">s(1)</command>
+<command error="true" execution_time="366">s1(1)</command>
+<command execution_time="18">s2(1)</command>
+<command error="true" execution_time="303">s1(1,:)</command>
+<command execution_time="13">s(1,:)</command>
+<command execution_time="22">s(:,1)</command>
+<command execution_time="30">s(:,1)'</command>
+<command execution_time="15">s2(:,1)'</command>
+<command execution_time="24">s2(:,1:6)'</command>
+<command execution_time="21">s(:,1:6)'</command>
+<command execution_time="18">s2(:,1)</command>
+<command execution_time="15">s2(:,1)'</command>
+<command execution_time="15">s2(1:6,1)'</command>
+<command execution_time="35">s(1:6,1)'</command>
+<command execution_time="1773">drawspech(s)</command>
+<command execution_time="49">figure</command>
+<command execution_time="17">drawspech(s2)</command>
+<command execution_time="100">m = sliceit(x,80,40);</command>
+<command execution_time="230">prefdir</command>
+</session>
+</history>
